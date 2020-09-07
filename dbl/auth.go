@@ -43,7 +43,7 @@ func init() {
 	client, err := mongo.NewClient(options.Client().ApplyURI(p.uri))
 	utils.CloseApp(err)
 
-	ctx, _ := context.WithTimeout(context.Background(), 30*time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 300*time.Second)
 	// ctx := context.TODO()
 	err = client.Connect(ctx)
 	utils.CloseApp(err)
