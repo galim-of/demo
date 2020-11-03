@@ -1,4 +1,5 @@
 This is example of JWT-authentication service
+
 Endpoints:
 - /auth - authenticate user with guid and password
 - /refresh - returns new pair of access and refresh tokens
